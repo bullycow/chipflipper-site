@@ -1,1 +1,139 @@
-<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=/privacy/"><title>Chip Flipper</title><a href="/privacy/">Privacy policy</a>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chip Flipper</title>
+<meta name="description" content="Chip Flipper is an idle tycoon about the GPU market for Android. Scalp cards in a garage, build a chip fab, ride the AI boom.">
+<meta property="og:title" content="Chip Flipper">
+<meta property="og:description" content="An idle tycoon about the GPU market. Scalp cards in a garage, build a chip fab, ride the AI boom.">
+<meta property="og:image" content="https://chipflipper.diogo-fernandes.pt/img/feature.png">
+<link rel="icon" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Bungee&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #1f1b18;
+    --floor: #173030;
+    --ink: #f2e9d8;
+    --muted: #b9ad99;
+    --gold: #e6b142;
+    --rust: #d9692b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 500 20px/1.5 "Barlow Condensed", system-ui, sans-serif;
+  }
+  a { color: var(--gold); }
+  .wrap { max-width: 60rem; margin: 0 auto; padding: 0 16px; }
+
+  header { padding-top: 56px; padding-bottom: 40px; }
+  .hero { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
+  .hero img { width: 128px; height: 128px; border-radius: 28px; flex: none; }
+  h1 {
+    font: 400 clamp(44px, 9vw, 76px)/0.95 "Bungee", sans-serif;
+    margin: 0 0 10px;
+    letter-spacing: .01em;
+  }
+  .tag { margin: 0; color: var(--gold); font-weight: 600; font-size: 24px; }
+
+  .status {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 10px 16px;
+    border: 2px solid var(--gold);
+    border-radius: 10px;
+    font-weight: 600;
+  }
+
+  .intro { padding-top: 8px; padding-bottom: 40px; }
+  .intro p { max-width: 38rem; }
+  .intro p { margin: 0 0 16px; }
+
+  .floor {
+    background: var(--floor);
+    border-top: 6px solid var(--gold);
+    padding: 40px 0 48px;
+  }
+  .shots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .shots figure { margin: 0; }
+  .shots img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+    border: 2px solid #2c4a4a;
+  }
+  .shots figcaption { margin-top: 8px; color: var(--muted); font-size: 18px; }
+
+  footer { padding: 28px 0 40px; color: var(--muted); font-size: 18px; }
+  footer nav { display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 10px; }
+
+  @media (max-width: 640px) {
+    header { padding-top: 36px; }
+    .shots { scrollbar-color: var(--gold) var(--floor); }
+    .hero img { width: 96px; height: 96px; border-radius: 22px; }
+    .shots {
+      grid-template-columns: repeat(3, 72%);
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 8px;
+    }
+    .shots figure { scroll-snap-align: start; }
+  }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="hero">
+    <img src="/img/icon.png" alt="Chip Flipper icon: a chip being flipped with a spatula">
+    <div>
+      <h1>Chip<br>Flipper</h1>
+      <p class="tag">An idle tycoon about the GPU market</p>
+    </div>
+  </div>
+  <p class="status">Coming to Google Play. Closed testing now.</p>
+</header>
+
+<main>
+  <section class="wrap intro">
+    <p>You buy graphics cards at launch and relist them by lunch. Then you buy a sand pit. Then a cleanroom. Eventually you are building chips for an AI that nobody asked for, in a factory with its own weather.</p>
+    <p>Every factory is a chain: sand, lithography, shipping, and later sales. The slowest stage sets the pace, and a marker shows you which one it is. Buy there. Then it moves somewhere else.</p>
+    <p>Three eras, a tech tree full of card models, a market that follows the headlines, and a factory that keeps running while the game is closed.</p>
+  </section>
+
+  <section class="floor">
+    <div class="wrap shots">
+      <figure>
+        <img src="/img/mid_era_one.jpg" width="540" height="960" alt="Era one: a suburban garage with a sand pit, lithography bench and shipping dock">
+        <figcaption>The garage</figcaption>
+      </figure>
+      <figure>
+        <img src="/img/era_two.jpg" width="540" height="960" alt="Era two: a chip fab campus with four buildings and delivery vans">
+        <figcaption>The fab campus</figcaption>
+      </figure>
+      <figure>
+        <img src="/img/era_three.jpg" width="540" height="960" alt="Era three: a purple AI megafactory at night">
+        <figcaption>The AI megafactory</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <nav>
+    <a href="/privacy/">Privacy policy</a>
+    <a href="mailto:chipflipper@diogo-fernandes.pt">chipflipper@diogo-fernandes.pt</a>
+  </nav>
+  <p>Chip Flipper is not affiliated with any GPU or chip manufacturer.</p>
+</footer>
+</body>
+</html>
