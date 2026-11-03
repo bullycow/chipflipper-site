@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chipflipper.diogo-fernandes.pt/sitemap.xml
