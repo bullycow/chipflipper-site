@@ -96,6 +96,23 @@
   }
   .shots figcaption { margin-top: 8px; color: var(--muted); font-size: 18px; }
 
+  .beta { padding-top: 44px; padding-bottom: 8px; }
+  .beta h2 { font: 400 32px/1.1 "Bungee", sans-serif; margin: 0 0 8px; }
+  .beta > p { margin: 0 0 20px; max-width: 38rem; }
+  .steps { list-style: none; padding: 0; margin: 0 0 16px; display: grid; gap: 12px; max-width: 38rem; }
+  .steps li { display: flex; gap: 14px; align-items: center; }
+  .steps .n {
+    flex: none; width: 40px; height: 40px; border-radius: 50%;
+    display: grid; place-items: center;
+    background: var(--gold); color: var(--bg); font-weight: 600;
+  }
+  .btn {
+    display: inline-block; padding: 10px 18px; border-radius: 10px;
+    background: var(--rust); color: var(--ink); text-decoration: none; font-weight: 600;
+  }
+  .btn:hover, .btn:focus-visible { background: #e57c40; }
+  .fine { color: var(--muted); font-size: 18px; max-width: 38rem; }
+
   footer { padding: 28px 0 40px; color: var(--muted); font-size: 18px; }
   footer nav { display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 10px; }
 
@@ -122,7 +139,7 @@
       <p class="tag">An idle tycoon about the GPU market</p>
     </div>
   </div>
-  <p class="status">Coming to Google Play. Closed testing now.</p>
+  <p class="status">Coming to Google Play. <a href="#beta">Join the beta</a></p>
 </header>
 
 <main>
@@ -130,6 +147,17 @@
     <p>You buy graphics cards at launch and relist them by lunch. Then you buy a sand pit. Then a cleanroom. Eventually you are building chips for an AI that nobody asked for, in a factory with its own weather.</p>
     <p>Every factory is a chain: sand, lithography, shipping, and later sales. The slowest stage sets the pace, and a marker shows you which one it is. Buy there. Then it moves somewhere else.</p>
     <p>Three eras, a tech tree full of card models, a market that follows the headlines, and a factory that keeps running while the game is closed.</p>
+  </section>
+
+  <section class="wrap beta" id="beta">
+    <h2>Join the beta</h2>
+    <p>Chip Flipper is in closed testing on Google Play. You need an Android phone and a Google account. It takes a minute.</p>
+    <ol class="steps">
+      <li><span class="n">1</span><a class="btn" href="https://groups.google.com/g/chipflipper-beta">Join the tester group</a></li>
+      <li><span class="n">2</span><a class="btn" href="https://play.google.com/apps/testing/com.bullycow.gputycoon">Become a tester</a></li>
+      <li><span class="n">3</span><span>Install Chip Flipper from the Play Store link on that page.</span></li>
+    </ol>
+    <p class="fine">Use the same Google account for all three steps. Please keep the game installed for at least 14 days: Google counts how many testers stay. Found a bug? Settings in the game has a Report a bug button.</p>
   </section>
 
   <section class="floor">
